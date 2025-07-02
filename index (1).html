@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pisante Store</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; background: #f4f4f4; }
+    header { background: #111; color: #fff; padding: 20px; text-align: center; }
+    nav ul { list-style: none; display: flex; justify-content: center; background: #222; }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { color: white; text-decoration: none; padding: 15px; display: block; }
+    nav ul li a:hover { background: #444; }
+    section { padding: 40px; max-width: 1000px; margin: auto; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .product { background: white; padding: 15px; border: 1px solid #ddd; border-radius: 8px; text-align: center; }
+    .product img { width: 100%; border-radius: 8px; }
+    .product button { margin-top: 10px; background: #25d366; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; }
+    .product button:hover { background: #128c7e; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    footer { text-align: center; background: #111; color: white; padding: 20px; margin-top: 40px; }
+    form input, form textarea { width: 100%; padding: 10px; margin: 10px 0; }
+    form button { background: #111; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+    form button:hover { background: #333; }
+
+    /* Botão WhatsApp fixo */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pisante Store</h1>
+    <p>Sua loja online de estilo</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre a Pisante Store</h2>
+    <p>A Pisante Store é uma loja online dedicada a oferecer os melhores calçados e acessórios com estilo e conforto. Entregamos em todo o Brasil com qualidade e rapidez.</p>
+  </section>
+
+  <section id="produtos">
+    <h2>Produtos</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/300x300" alt="Produto 1">
+        <h3>Tênis Casual Preto</h3>
+        <p>R$ 229,90</p>
+        <button onclick="window.location.href='https://wa.me/5591999999999?text=Olá!%20Tenho%20interesse%20no%20Tênis%20Casual%20Preto%20da%20Pisante%20Store.'">
+          Comprar no WhatsApp
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/200" alt="Galeria 1">
+      <img src="https://via.placeholder.com/200" alt="Galeria 2">
+      <img src="https://via.placeholder.com/200" alt="Galeria 3">
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <form>
+      <input type="text" placeholder="Nome" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="5" placeholder="Mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pisante Store - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Botão WhatsApp -->
+  <a class="whatsapp-float" href="https://wa.me/5591999999999?text=Olá!%20Quero%20falar%20com%20a%20Pisante%20Store." target="_blank">💬</a>
+</body>
+</html>
